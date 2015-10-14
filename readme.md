@@ -16,13 +16,13 @@ Docker Quickstart
 -----------------
 
 1. Create a configuration json
-2. 
+2.
 ```
 docker run -d \
   --name cachet-monitor \
   -h cachet-monitor \
   -v `pwd`/config.json:/etc/cachet-monitor.config.json \
-  castawaylabs/cachet-monitor
+  digitalmarauders/cachet-monitor
 ```
 
 Configuration
@@ -65,8 +65,8 @@ How to run
 Example:
 
 1. Set up [Go](https://golang.org)
-2. `go install github.com/castawaylabs/cachet-monitor`
-3. `cachet-monitor -c https://raw.githubusercontent.com/CastawayLabs/cachet-monitor/master/example.config.json`
+2. `go install github.com/digitalmarauders/cachet-monitor`
+3. `cachet-monitor -c https://raw.githubusercontent.com/digitalmarauders/cachet-monitor/master/example.config.json`
 
 Production:
 
