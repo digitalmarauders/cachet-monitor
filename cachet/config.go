@@ -11,7 +11,7 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/castawaylabs/cachet-monitor/system"
+	"github.com/digitalmarauders/cachet-monitor/system"
 )
 
 // Static config
@@ -87,12 +87,12 @@ func init() {
 	}
 
 	if len(Config.APIToken) == 0 || len(Config.APIUrl) == 0 {
-		fmt.Printf("API URL or API Token not set. cachet-monitor won't be able to report incidents.\n\nPlease set:\n CACHET_API and CACHET_TOKEN environment variable to override settings.\n\nGet help at https://github.com/CastawayLabs/cachet-monitor\n")
+		fmt.Printf("API URL or API Token not set. cachet-monitor won't be able to report incidents.\n\nPlease set:\n CACHET_API and CACHET_TOKEN environment variable to override settings.\n\nGet help at https://github.com/digitalmarauders/cachet-monitor\n")
 		os.Exit(1)
 	}
 
 	if len(Config.Monitors) == 0 {
-		fmt.Printf("No monitors defined!\nSee sample configuration: https://github.com/CastawayLabs/cachet-monitor/blob/master/example.config.json\n")
+		fmt.Printf("No monitors defined!\nSee sample configuration: https://github.com/digitalmarauders/cachet-monitor/blob/master/example.config.json\n")
 		os.Exit(1)
 	}
 

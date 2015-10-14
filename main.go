@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/castawaylabs/cachet-monitor/cachet"
+	"github.com/digitalmarauders/cachet-monitor/cachet"
 	"time"
 )
 
