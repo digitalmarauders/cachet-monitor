@@ -54,6 +54,7 @@ func (incident *Incident) Send() {
 		"status":       incident.Status,
 		"component_id": incident.ComponentID,
 		"notify":       true,
+		"visible":      true,
 	})
 
 	requestType := "POST"
